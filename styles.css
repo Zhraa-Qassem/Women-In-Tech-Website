@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #D902FF;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(95, 93, 93, 0.8); */
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 550;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+ul li a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: 2px double #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 0.5px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-image:
+        radial-gradient(at 99% 75%, hsla(0, 0%, 100%, 0.167) 0px, transparent 50%),
+        radial-gradient(at 98% 32%, hsla(60, 0%, 100%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.362) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(307, 64%, 68%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.288) 0px, transparent 50%),
+        radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.248) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.263) 0px, transparent 50%),
+        radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.13) 0px, transparent 50%);
+    color: #000000;
+}
+
+
+.reg-btn {
+    padding: 3px 30px;
+    background: transparent;
+    border-radius: 40px;
+    border: 3px solid #CD4995;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #CD4995;
+    transition: all ease-in 0.2s;
+}
+
+.reg-btn:hover {
+    border: 3px solid #a03976;
+    color: #a03976;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/Women.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+main div {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/Globe-vector.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+}
+
+main div div {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    width: 40%;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+main div div h1 {
+    font-family: Racing-sans;
+    font-size: 148px;
+    width: 750px;
+    color: #3F3E3F;
+    line-height: 120px;
+}
+
+main div div button {
+    width: 220px;
+    height: 50px;
+    background: #D902FF;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+main div div button:hover {
+    background: #9b00b7;
+
+}
+
+.star-shape {
+    position: absolute;
+    right: 200px;
+    bottom: 350px;
+}
+
+.section-peragraph {
+    margin-top: 40px;
+
+}
+
+.home-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin: 0 15px 40px 15px;
+    padding: 10px;
+}
+
+section div {
+    margin: 0 15px 40px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+section div p {
+    width: 50%;
+    margin-left: 20px;
+    font-size: 24px;
+    overflow-wrap: break-word;
+}
+
+section div img {
+    width: auto;
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+section div div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+section div div h1 {
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-size: 36px;
+    font-family: AbrilFactface;
+    color: #8108F8;
+}
+
+section div div ul {
+    font-size: 24px;
+}
+
+
+.star {
+    position: absolute;
+    left: -100px;
+    bottom: -200px;
+}
