@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #D902FF;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: hsla(0, 0%, 85%, 0.98);
+    background-image:
+        radial-gradient(at 99% 75%, hsla(60, 0%, 100%, 0.23) 0px, transparent 50%),
+        radial-gradient(at 98% 32%, hsla(60, 0%, 100%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.16) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(307, 64%, 68%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.25) 0px, transparent 50%),
+        radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.18) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.06) 0px, transparent 50%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 550;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+ul li a.active {
+    color: var(--primary-color); 
+    font-weight: bold; 
+    border-bottom: 2px solid var(--primary-color); 
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-right:8px ;
+    border: 2px double #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 0.5px;
+    color: var(#000000);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-image:
+        radial-gradient(at 99% 75%, hsla(0, 0%, 100%, 0.167) 0px, transparent 50%),
+        radial-gradient(at 98% 32%, hsla(60, 0%, 100%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.362) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(307, 64%, 68%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.288) 0px, transparent 50%),
+        radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.248) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.263) 0px, transparent 50%),
+        radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.13) 0px, transparent 50%);
+    color: #000000;
+
+}
+
+.search-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 30px;
+    font-family: "Sacramento", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card h2 {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.course-video {
+    width: 100%;
+    height: 200px;
+}
+
+.course-title {
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heart-icon {
+    color: red;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="icon" type="image/png" href="../assets/WIT.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../assets/Zain-logo.svg" alt="Zain Logo" width="150" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="./index.html" class="active">Courses</a></li>
+                    <li><a href="../Contact-Us-Page/Contact us page/ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="../Log-In-Page/Log In Page/Log In.html" class="btn">Log In</a>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search For More Courses">
+            <span class="search-icon">&#x1F50D;</span>
+        </div>
+
+        <h1>Our Popular <span>Courses</span></h1>
+        <p class="subtitle">It always seems impossible until it's done</p>
+
+        <div class="courses-grid">
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('UI/UX and Web design', 'John Doe', '2 Weeks', '156 Students', '20 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/N-xuqy6x1Bw?si=NqsVQS1ljHPRks7n', 'Learn the fundamentals of UI/UX design.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/N-xuqy6x1Bw?si=NqsVQS1ljHPRks7n"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">UI/UX and Web design</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Digital transformation', 'Jane Smith', '3 Weeks', '200 Students', '15 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/Fi3vSjkj5S0?si=VubaCnWiRidbTe77', 'Transform your digital skills.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/Fi3vSjkj5S0?si=VubaCnWiRidbTe77"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Digital transformation</h2>
+            </a>
+
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Front End Development', 'Alice Brown', '4 Weeks', '180 Students', '25 Lessons', '5 Quizzes', 'https://www.youtube.com/embed/TBIjgBVFjVI?si=ABi7BPnBEgin08ip', 'Learn to build beautiful websites.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/TBIjgBVFjVI?si=ABi7BPnBEgin08ip"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Front End Development</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Project management', 'Robert White', '6 Weeks', '120 Students', '10 Lessons', '2 Quizzes', 'https://www.youtube.com/embed/ztmaTF_Qs9A?si=eTeB4E4X0Sn5AURA', 'Master the art of project management.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/ztmaTF_Qs9A?si=eTeB4E4X0Sn5AURA"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Project management</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('React Development', 'Emily Davis', '5 Weeks', '150 Students', '12 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/2OTq15A5s0Y?si=NwnaRWAdW92AJVQ2', 'Become a React developer.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/2OTq15A5s0Y?si=NwnaRWAdW92AJVQ2"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">React Development</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Back End Development', 'Michael Johnson', '4 Weeks', '130 Students', '20 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/XBu54nfzxAQ?si=Be566t2JUGL45BT3', 'Learn back-end programming.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/tN6oJu2DqCM?si=5Xm3GZo1IMweQx13" 
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Back End Development</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('HTML and CSS Course', 'Linda Green', '3 Weeks', '175 Students', '15 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/G3e-cpL7ofc?si=h-rK929dl-hLsuLy', 'Learn HTML and CSS basics.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/G3e-cpL7ofc?si=h-rK929dl-hLsuLy"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">HTML and CSS Course</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Java Script', 'Chris Black', '5 Weeks', '160 Students', '18 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/lfmg-EJ8gm4?si=vbw07ppxzQGI6Tx_', 'Master JavaScript basics.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=vbw07ppxzQGI6Tx_"
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Java Script</h2>
+            </a>
+            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Figma Course', 'Emma Wilson', '2 Weeks', '140 Students', '10 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/tKfTKVgQsOg?si=pHlTaj8Bd5IJrBCP', 'Learn to design with Figma.')">
+                <iframe class="course-video" src="https://www.youtube.com/embed/nq19w0d5o0U?si=q866fBgP3VLI2YK6" 
+                    title="Digital transformation video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2 class="course-title">Figma Course</h2>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        function storeCourseInfo(title, instructor, duration, students, lessons, quizzes, videoUrl, description) {
+            const courseInfo = {
+                title,
+                instructor,
+                duration,
+                students,
+                lessons,
+                quizzes,
+                videoUrl,
+                description
+            };
+            localStorage.setItem('selectedCourse', JSON.stringify(courseInfo));
+        }
+    </script>
+
+    <script src="../courses.js"></script>
+</body>
+
+</html>
