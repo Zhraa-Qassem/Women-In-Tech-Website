@@ -8,11 +8,6 @@
     <link rel="icon" type="image/png" href="../assets/WIT.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -41,94 +36,214 @@
         </div>
 
         <h1>Our Popular <span>Courses</span></h1>
-        <p class="subtitle">It always seems impossible until it's done</p>
+        <p class="subtitle" id="cursive-subtitle ">It always seems impossible until it's done</p>
 
-        <div class="courses-grid">
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('UI/UX and Web design', 'John Doe', '2 Weeks', '156 Students', '20 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/N-xuqy6x1Bw?si=NqsVQS1ljHPRks7n', 'Learn the fundamentals of UI/UX design.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/N-xuqy6x1Bw?si=NqsVQS1ljHPRks7n"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">UI/UX and Web design</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Digital transformation', 'Jane Smith', '3 Weeks', '200 Students', '15 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/Fi3vSjkj5S0?si=VubaCnWiRidbTe77', 'Transform your digital skills.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/Fi3vSjkj5S0?si=VubaCnWiRidbTe77"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Digital transformation</h2>
-            </a>
-
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Front End Development', 'Alice Brown', '4 Weeks', '180 Students', '25 Lessons', '5 Quizzes', 'https://www.youtube.com/embed/TBIjgBVFjVI?si=ABi7BPnBEgin08ip', 'Learn to build beautiful websites.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/TBIjgBVFjVI?si=ABi7BPnBEgin08ip"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Front End Development</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Project management', 'Robert White', '6 Weeks', '120 Students', '10 Lessons', '2 Quizzes', 'https://www.youtube.com/embed/ztmaTF_Qs9A?si=eTeB4E4X0Sn5AURA', 'Master the art of project management.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/ztmaTF_Qs9A?si=eTeB4E4X0Sn5AURA"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Project management</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('React Development', 'Emily Davis', '5 Weeks', '150 Students', '12 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/2OTq15A5s0Y?si=NwnaRWAdW92AJVQ2', 'Become a React developer.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/2OTq15A5s0Y?si=NwnaRWAdW92AJVQ2"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">React Development</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Back End Development', 'Michael Johnson', '4 Weeks', '130 Students', '20 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/XBu54nfzxAQ?si=Be566t2JUGL45BT3', 'Learn back-end programming.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/tN6oJu2DqCM?si=5Xm3GZo1IMweQx13" 
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Back End Development</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('HTML and CSS Course', 'Linda Green', '3 Weeks', '175 Students', '15 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/G3e-cpL7ofc?si=h-rK929dl-hLsuLy', 'Learn HTML and CSS basics.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/G3e-cpL7ofc?si=h-rK929dl-hLsuLy"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">HTML and CSS Course</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Java Script', 'Chris Black', '5 Weeks', '160 Students', '18 Lessons', '4 Quizzes', 'https://www.youtube.com/embed/lfmg-EJ8gm4?si=vbw07ppxzQGI6Tx_', 'Master JavaScript basics.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=vbw07ppxzQGI6Tx_"
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Java Script</h2>
-            </a>
-            <a href="../course-info/index.html" class="course-card" onclick="storeCourseInfo('Figma Course', 'Emma Wilson', '2 Weeks', '140 Students', '10 Lessons', '3 Quizzes', 'https://www.youtube.com/embed/tKfTKVgQsOg?si=pHlTaj8Bd5IJrBCP', 'Learn to design with Figma.')">
-                <iframe class="course-video" src="https://www.youtube.com/embed/nq19w0d5o0U?si=q866fBgP3VLI2YK6" 
-                    title="Digital transformation video" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2 class="course-title">Figma Course</h2>
-            </a>
+        <div class="courses-grid" id="courses-grid">
+            <!-- Courses will be dynamically inserted here -->
         </div>
-
     </div>
 
     <script>
-        function storeCourseInfo(title, instructor, duration, students, lessons, quizzes, videoUrl, description) {
-            const courseInfo = {
-                title,
-                instructor,
-                duration,
-                students,
-                lessons,
-                quizzes,
-                videoUrl,
-                description
-            };
+        const courses = [
+            {
+                title: "UI/UX and Web Design",
+                instructor: "Jane Doe",
+                duration: "2 Weeks",
+                students: 156,
+                lessons: 20,
+                quizzes: 3,
+                videoUrl: "https://www.youtube.com/embed/N-xuqy6x1Bw?si=NqsVQS1ljHPRks7n",
+                description: "Our UI/UX Design course is designed to empower women to excel in the exciting field of technology. This comprehensive program will equip you with the essential skills to create intuitive, visually appealing, and user-centered digital experiences. You'll explore design thinking, user research, prototyping, and usability testing, preparing you for real-world challenges in the design landscape.",
+                highlights: [
+                    "Hands-on Projects: Apply your learning through practical exercises and real-world projects to build a strong portfolio.",
+                    "Industry-Standard Tools: Master industry-leading software like Figma, Adobe XD, and Sketch to design exceptional user interfaces.",
+                    "User Research and Testing: Learn to conduct effective user research and testing to understand your target audience and validate design decisions.",
+                    "Accessibility and Inclusivity: Explore how to create inclusive designs that cater to diverse user needs and abilities.",
+                    "Networking Opportunities: Connect with industry professionals and peers to build relationships and grow your career."
+                ]
+            },
+            {
+                title: "Digital Transformation",
+                instructor: "John Smith",
+                duration: "4 Weeks",
+                students: 200,
+                lessons: 25,
+                quizzes: 4,
+                videoUrl: "https://www.youtube.com/embed/Fi3vSjkj5S0?si=VubaCnWiRidbTe77",
+                description: "This course introduces the concept of digital transformation and its impact on modern businesses. You'll learn how companies leverage technology to improve customer experiences, operations, and business models. We will delve into the strategies and tools necessary to drive transformation initiatives and create a culture of innovation.",
+                highlights: [
+                    "Business Strategy: Understand how digital transformation shapes modern business strategies.",
+                    "Technology Integration: Learn how to integrate advanced technologies into business processes.",
+                    "Case Studies: Analyze real-world examples of successful digital transformation initiatives.",
+                    "Change Management: Gain insights into managing change and overcoming resistance within organizations.",
+                    "Future Trends: Explore emerging technologies and trends that will impact the future of business."
+                ]
+            },
+            {
+                title: "Front End Development",
+                instructor: "Alice Johnson",
+                duration: "6 Weeks",
+                students: 180,
+                lessons: 30,
+                quizzes: 5,
+                videoUrl: "https://www.youtube.com/embed/TBIjgBVFjVI?si=ABi7BPnBEgin08ip",
+                description: "This course covers the fundamentals of front-end development, focusing on HTML, CSS, and JavaScript. You'll learn to create responsive, user-friendly web pages and applications. The course emphasizes best practices in coding, design principles, and effective debugging techniques to help you become a proficient front-end developer.",
+                highlights: [
+                    "Responsive Design: Learn how to create layouts that adapt to different screen sizes.",
+                    "JavaScript Basics: Understand core JavaScript concepts to enhance your web pages.",
+                    "Project-Based Learning: Complete projects that showcase your skills in building functional websites.",
+                    "Version Control: Get introduced to Git and GitHub for managing your code effectively.",
+                    "Performance Optimization: Discover best practices to ensure your websites load quickly and run smoothly."
+                ]
+            },
+            {
+                title: "Project Management",
+                instructor: "Michael Brown",
+                duration: "3 Weeks",
+                students: 150,
+                lessons: 15,
+                quizzes: 2,
+                videoUrl: "https://www.youtube.com/embed/ztmaTF_Qs9A?si=eTeB4E4X0Sn5AURA",
+                description: "Gain essential skills in project management, including planning, executing, and closing projects. This course emphasizes agile methodologies and real-world applications. You'll learn how to manage projects effectively, communicate with stakeholders, and deliver results on time and within budget.",
+                highlights: [
+                    "Agile Methodologies: Learn about Scrum and Kanban frameworks for effective project management.",
+                    "Risk Management: Understand how to identify and mitigate risks in projects.",
+                    "Team Collaboration: Develop skills to work effectively within teams.",
+                    "Tools and Software: Get hands-on experience with popular project management tools like Trello and Asana.",
+                    "Leadership Skills: Cultivate leadership qualities that enhance team dynamics and productivity."
+                ]
+            },
+            {
+                title: "React Development",
+                instructor: "Sarah Wilson",
+                duration: "5 Weeks",
+                students: 250,
+                lessons: 20,
+                quizzes: 4,
+                videoUrl: "https://www.youtube.com/embed/2OTq15A5s0Y?si=NwnaRWAdW92AJVQ2",
+                description: "Explore React, a powerful JavaScript library for building user interfaces. This course covers components, state management, and advanced concepts like hooks. You'll learn how to create scalable, maintainable applications and understand the core principles that make React an industry-standard technology.",
+                highlights: [
+                    "Component-Based Architecture: Learn how to build reusable components for your applications.",
+                    "State Management: Understand how to manage state with Redux.",
+                    "Performance Optimization: Discover techniques to enhance application performance.",
+                    "Testing: Get introduced to testing frameworks like Jest to ensure your code is reliable.",
+                    "Integration: Learn how to integrate APIs and work with external data sources."
+                ]
+            },
+            {
+                title: "Back End Development",
+                instructor: "David Lee",
+                duration: "4 Weeks",
+                students: 220,
+                lessons: 18,
+                quizzes: 3,
+                videoUrl: "https://www.youtube.com/embed/tN6oJu2DqCM?si=5Xm3GZo1IMweQx13",
+                description: "This course covers the essentials of back-end development, including server setup, databases, and RESTful APIs. Gain the skills to build scalable web applications and understand the importance of security and performance in back-end systems.",
+                highlights: [
+                    "Database Management: Learn about SQL and NoSQL databases.",
+                    "API Development: Create RESTful APIs to connect your front-end with back-end services.",
+                    "Authentication and Security: Understand how to implement user authentication and protect your applications.",
+                    "Deployment: Discover how to deploy your applications on cloud platforms like AWS and Heroku.",
+                    "Debugging: Learn effective debugging techniques to troubleshoot issues in your code."
+                ]
+            },
+            {
+                title: "HTML and CSS Course",
+                instructor: "Emily White",
+                duration: "2 Weeks",
+                students: 170,
+                lessons: 10,
+                quizzes: 2,
+                videoUrl:"https://www.youtube.com/embed/HXYZxVbWkjc?si=NyU-beRnrmJ-AsWI" ,
+                description: "Master the fundamentals of web development with HTML and CSS. This course is perfect for beginners looking to create beautiful web pages. You'll gain a solid understanding of web standards and best practices, enabling you to build responsive and visually appealing sites.",
+                highlights: [
+                    "HTML Basics: Learn about HTML structure, elements, and semantic markup.",
+                    "CSS Styling: Understand how to style your web pages with CSS.",
+                    "Hands-on Projects: Build projects to reinforce your learning.",
+                    "Accessibility: Learn how to make your web pages accessible to all users.",
+                    "SEO Fundamentals: Get an introduction to search engine optimization techniques."
+                ]
+            },
+            {
+                title: "JavaScript Course",
+                instructor: "Chris Green",
+                duration: "3 Weeks",
+                students: 300,
+                lessons: 15,
+                quizzes: 5,
+                videoUrl: "https://www.youtube.com/embed/lfmg-EJ8gm4?si=vbw07ppxzQGI6Tx_",
+                description: "Dive into JavaScript, the programming language of the web. This course covers both fundamental and advanced JavaScript concepts, ensuring you gain a comprehensive understanding of the language and its capabilities in web development.",
+                highlights: [
+                    "ES6 Features: Learn the latest features of JavaScript, including arrow functions and promises.",
+                    "DOM Manipulation: Understand how to manipulate the Document Object Model to create dynamic web pages.",
+                    "Asynchronous JavaScript: Learn about AJAX and how to work with APIs.",
+                    "Debugging Techniques: Discover best practices for debugging your JavaScript code.",
+                    "Project Work: Complete hands-on projects to solidify your learning."
+                ]
+            },
+            {
+                title: "Figma Course",
+                instructor: "Jessica Taylor",
+                duration: "2 Weeks",
+                students: 130,
+                lessons: 8,
+                quizzes: 1,
+                videoUrl: "https://www.youtube.com/embed/nq19w0d5o0U?si=q866fBgP3VLI2YK6",
+                description: "Get hands-on experience with Figma, a popular design tool used for UI/UX design. This course covers design principles and practical exercises, allowing you to create high-fidelity designs and prototypes.",
+                highlights: [
+                    "Design Basics: Learn the fundamentals of design and the Figma interface.",
+                    "Prototyping: Create interactive prototypes for your designs.",
+                    "Collaboration: Understand how to work in teams using Figma.",
+                    "Design Systems: Explore the concept of design systems and how to implement them in your projects.",
+                    "Feedback Integration: Learn how to incorporate feedback effectively during the design process."
+                ]
+            }
+        ];
+
+        const coursesGrid = document.getElementById('courses-grid');
+
+        // Function to create and render each course card
+        function renderCourse(course) {
+            const courseCard = document.createElement('a');
+            courseCard.classList.add('course-card');
+            courseCard.href = "../course-info/index.html"; // Link to the course details page
+        
+            // Event listener for storing course info
+            courseCard.addEventListener('click', () => {
+                storeCourseInfo(course.title, course.instructor, course.duration, course.students, course.lessons, course.quizzes, course.videoUrl, course.description, course.highlights);
+            });
+        
+            // Course Video (iframe)
+            const iframe = document.createElement('iframe');
+            iframe.classList.add('course-video');
+            iframe.src = course.videoUrl;
+            iframe.title = `${course.title} video`;
+            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+        
+            // Course Title
+            const title = document.createElement('h2');
+            title.classList.add('course-title');
+            title.textContent = course.title;
+        
+            // Append elements to the course card
+            courseCard.appendChild(iframe);
+            courseCard.appendChild(title);
+        
+            // Append course card to grid
+            coursesGrid.appendChild(courseCard);
+        }
+        
+
+        // Store selected course info in local storage
+        function storeCourseInfo(title, instructor, duration, students, lessons, quizzes, videoUrl, description, highlights) {
+            const courseInfo = { title, instructor, duration, students, lessons, quizzes, videoUrl, description, highlights };
             localStorage.setItem('selectedCourse', JSON.stringify(courseInfo));
         }
-    </script>
 
-    <script src="../courses.js"></script>
+        // Loop through each course and render it
+        courses.forEach(renderCourse);
+    </script>
 </body>
 
 </html>

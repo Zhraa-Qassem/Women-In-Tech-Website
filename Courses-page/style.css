@@ -134,14 +134,13 @@ h1 span {
     color: var(--primary-color);
 }
 
-.subtitle {
+.subtitle ,#cursive-subtitle {
     font-style: italic;
     margin-bottom: 30px;
-    font-family: "Sacramento", cursive;
+    font-family: "Sacramento", "cursive";
     font-weight: 500;
     font-style: normal;
     font-size: 35px;
-
 }
 
 .courses-grid {
