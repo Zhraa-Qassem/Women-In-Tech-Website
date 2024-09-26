@@ -34,6 +34,12 @@ body {
     padding: 20px;
 }
 
+hr {
+    margin-bottom: 20px; 
+    background-color: aliceblue; 
+    height: 1.2px; 
+    border: none; 
+}
 header {
     display: flex;
     justify-content: space-between;
