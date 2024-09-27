@@ -6,9 +6,9 @@
     --accent-color: #FF1493;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,16 +16,16 @@ body {
     font-family: 'Exo', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color:hsla(0,0%,85%,0.98);
-background-image:
-radial-gradient(at 99% 75%, hsla(60,0%,100%,0.23) 0px, transparent 50%),
-radial-gradient(at 98% 32%, hsla(60,0%,100%,0.4) 0px, transparent 50%),
-radial-gradient(at 100% 48%, hsla(60,47%,57%,0.16) 0px, transparent 50%),
-radial-gradient(at 100% 100%, hsla(307,64%,68%,0.5) 0px, transparent 50%),
-radial-gradient(at 0% 0%, hsla(4,75%,70%,0.25) 0px, transparent 50%),
-radial-gradient(at 49% 51%, hsla(309,100%,57%,0.18) 0px, transparent 50%),
-radial-gradient(at 100% 0%, hsla(289,100%,50%,0.19) 0px, transparent 50%),
-radial-gradient(at 13% 100%, hsla(60,91%,56%,0.06) 0px, transparent 50%);
+    background-color: hsla(0, 0%, 85%, 0.98);
+    background-image:
+        radial-gradient(at 99% 75%, hsla(60, 0%, 100%, 0.23) 0px, transparent 50%),
+        radial-gradient(at 98% 32%, hsla(60, 0%, 100%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.16) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(307, 64%, 68%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.25) 0px, transparent 50%),
+        radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.18) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.06) 0px, transparent 50%);
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
@@ -41,7 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    
+
 }
 
 .logo img {
@@ -52,7 +52,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    
+
 }
 
 nav ul li {
@@ -76,39 +76,40 @@ nav ul li a.active {
     padding: 8px 16px;
     border: 2px double #000000;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 0.5px ;
+    box-shadow: 2px 2px 2px 0.5px;
     color: var(#000000);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-   
-background-image:
-radial-gradient(at 99% 75%, hsla(0, 0%, 100%, 0.167) 0px, transparent 50%),
-radial-gradient(at 98% 32%, hsla(60,0%,100%,0.4) 0px, transparent 50%),
-radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.362) 0px, transparent 50%),
-radial-gradient(at 100% 100%, hsla(307,64%,68%,0.5) 0px, transparent 50%),
-radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.288) 0px, transparent 50%),
-radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.248) 0px, transparent 50%),
-radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.263) 0px, transparent 50%),
-radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.13) 0px, transparent 50%);
-color: #000000;
+
+    background-image:
+        radial-gradient(at 99% 75%, hsla(0, 0%, 100%, 0.167) 0px, transparent 50%),
+        radial-gradient(at 98% 32%, hsla(60, 0%, 100%, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 48%, hsla(60, 47%, 57%, 0.362) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(307, 64%, 68%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(4, 75%, 70%, 0.288) 0px, transparent 50%),
+        radial-gradient(at 49% 51%, hsla(309, 100%, 57%, 0.248) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(289, 100%, 50%, 0.263) 0px, transparent 50%),
+        radial-gradient(at 13% 100%, hsla(60, 91%, 56%, 0.13) 0px, transparent 50%);
+    color: #000000;
 }
 
-.flower{
-margin-top:-100px;
-margin-left:-145px;
+.flower {
+    margin-top: -100px;
+    margin-left: -145px;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    
+
 }
 
-.left-section, .right-section {
+.left-section,
+.right-section {
     flex: 1;
 }
 
@@ -173,8 +174,8 @@ margin-left:-145px;
     text-decoration: none;
 }
 
-.contact-text a:hover{
-    color:var(--primary-color);
+.contact-text a:hover {
+    color: var(--primary-color);
 }
 
 .contact-form {
@@ -197,7 +198,8 @@ margin-left:-145px;
     margin-bottom: 20px;
 }
 
-.form-row input, textarea {
+.form-row input,
+textarea {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
@@ -214,22 +216,22 @@ textarea {
     padding: 8px 16px;
     border: 2px double #000000;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px ;
+    box-shadow: 2px 2px 2px 2px;
     color: #4802b1;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.submit-btn:hover{
-    background-color:hsla(0,0%,100%,1);
+.submit-btn:hover {
+    background-color: hsla(0, 0%, 100%, 1);
     background-image:
-    radial-gradient(at 57% 8%, hsla(231,67%,63%,0.21) 0px, transparent 50%),
-    radial-gradient(at 45% 6%, hsla(348, 73%, 71%, 0.088) 0px, transparent 50%),
-    radial-gradient(at 98% 31%, hsla(348,93%,67%,0.22) 0px, transparent 50%),
-    radial-gradient(at 9% 93%, hsla(48,83%,73%,0.09) 0px, transparent 50%),
-    radial-gradient(at 62% 100%, hsla(0,0%,100%,0.04) 0px, transparent 50%),
-    radial-gradient(at 23% 57%, hsla(231,67%,63%,0.44) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(26,32%,11%,0.14) 0px, transparent 50%),
-    radial-gradient(at 100% 72%, hsla(220, 66%, 66%, 0.43) 0px, transparent 50%);
-color: #000000;
+        radial-gradient(at 57% 8%, hsla(231, 67%, 63%, 0.21) 0px, transparent 50%),
+        radial-gradient(at 45% 6%, hsla(348, 73%, 71%, 0.088) 0px, transparent 50%),
+        radial-gradient(at 98% 31%, hsla(348, 93%, 67%, 0.22) 0px, transparent 50%),
+        radial-gradient(at 9% 93%, hsla(48, 83%, 73%, 0.09) 0px, transparent 50%),
+        radial-gradient(at 62% 100%, hsla(0, 0%, 100%, 0.04) 0px, transparent 50%),
+        radial-gradient(at 23% 57%, hsla(231, 67%, 63%, 0.44) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(26, 32%, 11%, 0.14) 0px, transparent 50%),
+        radial-gradient(at 100% 72%, hsla(220, 66%, 66%, 0.43) 0px, transparent 50%);
+    color: #000000;
 }
