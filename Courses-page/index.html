@@ -42,7 +42,7 @@
         </div>
 
         <h1>Our Popular <span>Courses</span></h1>
-        <p class="subtitle" id="cursive-subtitle ">It always seems impossible until it's done</p>
+        <p class="section-title ">It always seems impossible until it's done</p>
 
         <div class="courses-grid" id="courses-grid">
             <!-- Courses will be dynamically inserted here -->
@@ -160,7 +160,7 @@
                 students: 170,
                 lessons: 10,
                 quizzes: 2,
-                videoUrl:"https://www.youtube.com/embed/HXYZxVbWkjc?si=NyU-beRnrmJ-AsWI" ,
+                videoUrl: "https://www.youtube.com/embed/HXYZxVbWkjc?si=NyU-beRnrmJ-AsWI",
                 description: "Master the fundamentals of web development with HTML and CSS. This course is perfect for beginners looking to create beautiful web pages. You'll gain a solid understanding of web standards and best practices, enabling you to build responsive and visually appealing sites.",
                 highlights: [
                     "HTML Basics: Learn about HTML structure, elements, and semantic markup.",
@@ -213,12 +213,12 @@
             const courseCard = document.createElement('a');
             courseCard.classList.add('course-card');
             courseCard.href = "../course-info/index.html"; // Link to the course details page
-        
+
             // Event listener for storing course info
             courseCard.addEventListener('click', () => {
                 storeCourseInfo(course.title, course.instructor, course.duration, course.students, course.lessons, course.quizzes, course.videoUrl, course.description, course.highlights);
             });
-        
+
             // Course Video (iframe)
             const iframe = document.createElement('iframe');
             iframe.classList.add('course-video');
@@ -226,20 +226,20 @@
             iframe.title = `${course.title} video`;
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
-        
+
             // Course Title
             const title = document.createElement('h2');
             title.classList.add('course-title');
             title.textContent = course.title;
-        
+
             // Append elements to the course card
             courseCard.appendChild(iframe);
             courseCard.appendChild(title);
-        
+
             // Append course card to grid
             coursesGrid.appendChild(courseCard);
         }
-        
+
 
         // Store selected course info in local storage
         function storeCourseInfo(title, instructor, duration, students, lessons, quizzes, videoUrl, description, highlights) {

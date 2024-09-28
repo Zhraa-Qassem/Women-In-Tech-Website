@@ -124,13 +124,27 @@ h1 span {
     color: var(--primary-color);
 }
 
-.subtitle ,#cursive-subtitle {
-    font-style: italic;
-    margin-bottom: 30px;
-    font-family: "Sacramento", "cursive";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 35px;
+.section-title {
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: start;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+    animation: fadeInUp 1s ease-out;
+
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    width:0;
+    height: 3px;
+    background-color: var(--text-color);
+    animation: expandWidth 1.5s ease-in-out forwards;
 }
 
 .courses-grid {
